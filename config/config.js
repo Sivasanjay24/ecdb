@@ -11,7 +11,7 @@ const CONFIG = {
         "https://opensheet.elk.sh/1CueshWbg10v-OeO-rcLyVB6Be4F0JZlPvF8SjWcYalI/1",
 
     // WhatsApp Number
-    WHATSAPP_NUMBER: "6380266930",
+    WHATSAPP_NUMBER: "6382589220",
 
     // Default Message
     WHATSAPP_MESSAGE:
