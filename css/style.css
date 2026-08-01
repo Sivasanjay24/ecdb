@@ -110,8 +110,8 @@ a{
     padding:40px 20px;
     color:white;
     background:
-    linear-gradient(rgba(91,34,143,.72),rgba(91,34,143,.72)),
-    url("../assets/hero.jpg") center/cover;
+    linear-gradient(rgba(96, 134, 224, 0.72),rgba(91,34,143,.72)),
+    url("../assets/hero2.jpg") center/cover;
 }
 
 .hero h1{
@@ -294,9 +294,9 @@ footer{
 
     z-index:900;
 
-    background:#FCF9FF;
+    background:white;
 
-    padding:10px 0;
+    padding:20px 0;
 
     border-bottom:1px solid #ececec;
 
@@ -306,7 +306,7 @@ footer{
 
     display:flex;
 
-    overflow-x:auto;
+    overflow-x:visible;
 
     gap:18px;
 
@@ -332,7 +332,7 @@ footer{
 
     padding:8px 0;
 
-    color:#777;
+    color:#00000093;
 
     font-size:16px;
 
@@ -348,7 +348,7 @@ footer{
 
 .category-tab.active{
 
-    color:#7B2CBF;
+    color:var(--primary);
 
 }
 
@@ -368,7 +368,7 @@ footer{
 
     border-radius:20px;
 
-    background:#7B2CBF;
+    background:var(--primary);
 
 }
 
@@ -376,7 +376,7 @@ footer{
 
     font-size:13px;
 
-    color:#999;
+    color:#000000b7;
 
     margin-left:4px;
 
@@ -496,7 +496,7 @@ footer{
 
 .service-price{
 
-    color:#7B2CBF;
+    color:#085503;
 
     font-size:28px;
 
