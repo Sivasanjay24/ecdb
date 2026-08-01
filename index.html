@@ -1,158 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Boutique Price List</title>
     <link rel="icon" href="assets/logo.png" type="image/x-icon" />
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- ================= NAVBAR ================= -->
 
     <!-- ================= NAVBAR ================= -->
 
-<header class="navbar">
-
-    <div class="container nav-container">
-
+    <header class="navbar">
+      <div class="container nav-container">
         <div class="logo">
+          <img
+            src="assets/logo.png"
+            alt="ELAN'S CREATION Logo"
+            class="logo-img"
+          />
 
-            <img
-                src="assets/logo.png"
-                alt="ELAN'S CREATION Logo"
-                class="logo-img"
-            >
-
-            <span class="logo-text">
-                ELAN'S CREATION
-            </span>
-
+          <span class="logo-text"> ELAN'S CREATION </span>
         </div>
-
-    </div>
-
-</header>
-
-
+      </div>
+    </header>
 
     <!-- ================= HERO ================= -->
 
     <section class="hero">
+      <div class="container">
+        <h1>Elegant Boutique Stitching</h1>
 
-        <div class="container">
-
-            <h1>
-                Elegant Boutique Stitching
-            </h1>
-
-            <p>
-                Custom Blouses • Aari Work • Chudidar • Saree Services
-            </p>
-
-        </div>
-
+        <p>Custom Blouses • Aari Work • Chudidar • Saree Services</p>
+      </div>
     </section>
-
-
 
     <!-- ================= PRICE LIST ================= -->
 
     <section class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Services</h2>
 
-        <div class="container">
-
-            <div class="section-title">
-
-                <h2>Price List</h2>
-
-                <p>Updated regularly</p>
-
-            </div>
-
-
-            <div id="serviceContainer" class="service-grid">
-
-                <!-- Cards loaded from Google Sheets -->
-
-            </div>
-
+          <p>Select a category to view services</p>
         </div>
+      </div>
 
+      <!-- CATEGORY TABS -->
+
+      <div class="category-wrapper">
+        <div id="categoryTabs" class="category-tabs"></div>
+      </div>
+
+      <!-- SERVICE CARDS -->
+
+      <div class="container">
+        <div id="serviceContainer" class="service-grid"></div>
+      </div>
     </section>
-
-
 
     <!-- ================= CONTACT ================= -->
 
     <section class="contact">
+      <div class="container">
+        <h2>Need Custom Stitching?</h2>
 
-        <div class="container">
+        <p>
+          Contact ELAN'S CREATION directly on WhatsApp for enquiries and orders.
+        </p>
 
-            <h2>Contact</h2>
+        <a href="#" id="whatsappContact" class="contact-btn">
+          <i class="fa-brands fa-whatsapp"></i>
 
-            <p>
-                Have questions about stitching or custom designs?
-            </p>
-
-            <a href="#" id="whatsappContact" class="contact-btn">
-
-                <i class="fab fa-whatsapp"></i>
-
-                Chat on WhatsApp
-
-            </a>
-
-        </div>
-
+          Chat on WhatsApp
+        </a>
+      </div>
     </section>
-
-
 
     <!-- ================= FOOTER ================= -->
 
     <footer>
+      <p>
+        © <span id="year"></span>
 
-        <p>
-
-            © <span id="year"></span>
-
-            ELANS CREATION
-
-            All Rights Reserved
-
-        </p>
-
+        ELAN'S CREATION
+      </p>
     </footer>
-
-
 
     <!-- Floating WhatsApp -->
 
-    <a href="#" id="floatingWhatsapp" class="floating-whatsapp">
-
-        <i class="fab fa-whatsapp"></i>
-
+    <a id="floatingWhatsapp" class="floating-whatsapp" href="#">
+      <i class="fa-brands fa-whatsapp"></i>
     </a>
-
-
 
     <!-- Scripts -->
 
@@ -165,7 +124,5 @@
     <script src="js/whatsapp.js"></script>
 
     <script src="js/app.js"></script>
-
-</body>
-
+  </body>
 </html>

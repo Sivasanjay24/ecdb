@@ -1,7 +1,22 @@
-/**
- * Initialize Website
- */
-async function initializeWebsite() {
+/* =====================================
+   ELAN'S CREATION
+===================================== */
+
+document.addEventListener("DOMContentLoaded", init);
+
+async function init() {
+
+    setFooterYear();
+
+    await loadServices();
+
+}
+
+/* =====================================
+   LOAD SERVICES
+===================================== */
+
+async function loadServices() {
 
     showLoading();
 
@@ -9,9 +24,27 @@ async function initializeWebsite() {
 
         const services = await fetchServices();
 
-        renderServices(services);
+        allServices = services;
 
-    } catch (error) {
+        if (services.length === 0) {
+
+            showEmpty();
+
+            return;
+
+        }
+
+        createCategoryTabs(services);
+
+        // Open first category automatically
+
+        const firstCategory = services[0].Category;
+
+        filterCategory(firstCategory);
+
+    }
+
+    catch (error) {
 
         console.error(error);
 
@@ -21,24 +54,13 @@ async function initializeWebsite() {
 
 }
 
-/**
- * Footer Year
- */
+/* =====================================
+   FOOTER YEAR
+===================================== */
+
 function setFooterYear() {
 
-    const year = document.getElementById("year");
-
-    year.textContent = new Date().getFullYear();
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
 
 }
-
-/**
- * Page Loaded
- */
-document.addEventListener("DOMContentLoaded", () => {
-
-    setFooterYear();
-
-    initializeWebsite();
-
-});
