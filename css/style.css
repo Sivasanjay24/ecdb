@@ -287,56 +287,75 @@ footer {
         CATEGORY BAR
 ========================================*/
 
-.category-wrapper {
-  position: sticky;
+.category-wrapper{
 
-  top: 70px;
+    position: sticky;
 
-  z-index: 900;
+    top: 70px;
 
-  background: white;
+    z-index: 900;
 
-  padding: 20px 0;
+    width: 100%;
 
-  border-bottom: 1px solid #ececec;
+    overflow: hidden;
+
+    background: #FCF9FF;
+
+    border-bottom: 1px solid #ececec;
+
 }
 
-.category-tabs {
-  display: flex;
+.category-tabs{
 
-  overflow-x: hidden;
+    display: flex;
 
-  gap: 18px;
+    overflow-x: auto;
 
-  padding: 0 18px;
+    overflow-y: hidden;
 
-  scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+
+    width: 100%;
+
+    padding: 0 16px;
+
+    gap: 18px;
+
 }
 
-.category-tabs::-webkit-scrollbar {
-  display: none;
+.category-tabs::-webkit-scrollbar{
+
+    display: none;
+
 }
 
-.category-tab {
-  position: relative;
+.category-tab{
 
-  border: none;
+    flex: 0 0 auto;
 
-  background: none;
+    white-space: nowrap;
 
-  padding: 8px 0;
+    border: none;
 
-  color: #00000093;
+    background: none;
 
-  font-size: 16px;
+    padding: 14px 0;
 
-  font-weight: 600;
+    font-size: 16px;
 
-  white-space: nowrap;
+    font-weight: 600;
 
-  cursor: pointer;
+    color: #666;
 
-  transition: 0.3s;
+}
+
+html,
+body{
+
+    overflow-x: hidden;
+
 }
 
 .category-tab.active {
